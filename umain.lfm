@@ -1,0 +1,129 @@
+object Form1: TForm1
+  Left = 385
+  Height = 429
+  Top = 175
+  Width = 438
+  BorderIcons = [biSystemMenu]
+  Caption = 'Free Pascal Lazarus Telebot App'
+  ClientHeight = 429
+  ClientWidth = 438
+  Position = poScreenCenter
+  LCLVersion = '2.2.4.0'
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 5
+    Width = 103
+    Caption = 'Telegram Bot Token'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 24
+    Width = 344
+    TabOrder = 0
+    Text = 'bot6511564497:AAFNQf9fljVlcnqL6ei8nFqmhJTOXdMFiVU'
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 176
+    Top = 64
+    Width = 416
+    Caption = 'Inbox'
+    ClientHeight = 156
+    ClientWidth = 412
+    TabOrder = 1
+    object Button1: TButton
+      Left = 8
+      Height = 25
+      Top = 8
+      Width = 144
+      Caption = 'Get Message'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object ListBox1: TListBox
+      Left = 8
+      Height = 96
+      Top = 48
+      Width = 392
+      ItemHeight = 0
+      OnDblClick = ListBox1DblClick
+      TabOrder = 1
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 8
+    Height = 168
+    Top = 248
+    Width = 416
+    Caption = 'Send Message'
+    ClientHeight = 148
+    ClientWidth = 412
+    TabOrder = 2
+    object Label2: TLabel
+      Left = 8
+      Height = 15
+      Top = 7
+      Width = 110
+      Caption = 'Destination (Chat ID)'
+      ParentColor = False
+    end
+    object Edit2: TEdit
+      Left = 128
+      Height = 23
+      Top = 7
+      Width = 176
+      Enabled = False
+      TabOrder = 0
+    end
+    object Label3: TLabel
+      Left = 8
+      Height = 15
+      Top = 48
+      Width = 46
+      Caption = 'Message'
+      ParentColor = False
+    end
+    object Memo1: TMemo
+      Left = 128
+      Height = 42
+      Top = 56
+      Width = 276
+      TabOrder = 1
+    end
+    object Button2: TButton
+      Left = 128
+      Height = 25
+      Top = 104
+      Width = 104
+      Caption = 'Send Message'
+      OnClick = Button2Click
+      TabOrder = 2
+    end
+    object Label4: TLabel
+      Left = 128
+      Height = 13
+      Top = 32
+      Width = 181
+      Caption = 'Double Click Inbox List to Get Chat ID'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -11
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsItalic]
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Button3: TButton
+    Left = 360
+    Height = 25
+    Top = 24
+    Width = 67
+    Caption = 'Bot Info'
+    OnClick = Button3Click
+    TabOrder = 3
+  end
+end
